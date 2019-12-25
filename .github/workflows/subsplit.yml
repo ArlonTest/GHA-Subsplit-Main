@@ -10,6 +10,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Clone subsplit
+              run: git clone https://github.com/dflydev/git-subsplit.git ~/subsplit
+
             - name: Install subsplit
               run: sudo cp ~/subsplit/git-subsplit.sh "$(git --exec-path)"/git-subsplit
 
