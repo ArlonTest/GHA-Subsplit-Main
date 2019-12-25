@@ -23,9 +23,6 @@ jobs:
             - name: Clone subsplit
               run: git clone https://github.com/dflydev/git-subsplit.git ~/subsplit
 
-            - name: Test 1
-              run: ssh -T git@github.com
-
             - name: Test 2
               run: ssh -T ArlonAntonius@github.com
 
