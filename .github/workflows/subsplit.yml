@@ -17,4 +17,4 @@ jobs:
               run: sudo cp ~/subsplit/git-subsplit.sh "$(git --exec-path)"/git-subsplit
 
             - name: Subsplit
-              run: bash build/split.sh
+              run: sudo bash build/split.sh
