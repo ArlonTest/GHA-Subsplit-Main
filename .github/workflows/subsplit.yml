@@ -17,6 +17,9 @@ jobs:
               with:
                   php-version: '7.3'
 
+            - name: Set GitHub Env
+              run: git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
+
             - name: Clone subsplit
               run: git clone https://github.com/dflydev/git-subsplit.git ~/subsplit
 
