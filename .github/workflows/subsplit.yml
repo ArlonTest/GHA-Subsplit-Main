@@ -11,7 +11,7 @@ jobs:
 
         steps:
             - name: Test 2
-              run: ssh -T ArlonAntonius@github.com
+              run: ssh -T git@github.com
 
             - name: Install subsplit
               run: sudo cp ~/subsplit/git-subsplit.sh "$(git --exec-path)"/git-subsplit
