@@ -10,19 +10,6 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@master
-
-            - name: Select PHP version
-              uses: shivammathur/setup-php@master
-              with:
-                  php-version: '7.3'
-
-            - name: Set GitHub Env
-              run: git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
-
-            - name: Clone subsplit
-              run: git clone https://github.com/dflydev/git-subsplit.git ~/subsplit
-
             - name: Test 2
               run: ssh -T ArlonAntonius@github.com
 
